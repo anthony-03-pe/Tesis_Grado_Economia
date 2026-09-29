@@ -28,7 +28,7 @@ Stata: `reghdfe`, `ftools`, `outreg2`, `rdrobust`, `rdplot`, `rddensity` y `lpde
 
 ## Datos y decisiones de reproducción
 
-Consulta `data/README.md` y `DIAGNOSTICO.md`. Los datos fuente se copian sin cambios a `data/raw/`. Las bases locales y los resultados generados están excluidos de Git; el repositorio contiene código, instrucciones y diagnóstico. Al clonar es necesario aportar las dos bases documentadas.
+Consulta `data/README.md` y `DIAGNOSTICO.md`. Los datos fuente se copian sin cambios a `data/raw/`. Las bases locales y los resultados generados están excluidos de Git; el repositorio contiene código, instrucciones, diagnóstico y copias de tablas y figuras en `resultados/`. Al clonar es necesario aportar las dos bases documentadas.
 
 Esta versión reproduce el PDF; conserva explícitamente el promedio de los años disponibles dentro de t+1 a t+4 y la agregación por país-año electoral. No exige cuatro años completos ni separa las elecciones coincidentes, porque eso cambiaría la muestra. Estas decisiones requieren una revisión metodológica aparte si se desea modificar el análisis.
 
@@ -50,3 +50,7 @@ Este proyecto utiliza las bases de replicación de:
 - Girardi, Daniele (2020). *Partisan Shocks and Financial Markets: Evidence from Close National Elections.* American Economic Journal: Applied Economics, 12(4), 224–252. [Artículo](https://doi.org/10.1257/app.20190292) · [Datos, versión V1](https://doi.org/10.3886/E115008V1).
 
 En [data/README.md](data/README.md) se incluyen las citas, los enlaces a los paquetes de replicación, los archivos exactos utilizados y las instrucciones para colocarlos en `data/raw/` y ejecutar el análisis. Las bases originales no se incluyen en este repositorio.
+
+## Consultar los resultados
+
+Las [tablas y figuras de R y Stata](resultados/README.md) están disponibles en `resultados/` para consultarlas sin ejecutar el análisis. Los resultados de cada nueva ejecución se escriben en `output/`, que permanece fuera de Git. La tesis escrita y las bases de datos no se incluyen.
