@@ -4,7 +4,7 @@ Proyecto de R y Stata para reproducir las cifras de `Tesis_Anthony_Quispe.pdf` (
 
 ## Desde Visual Studio Code
 
-1. Abre esta carpeta (`reproducibilidad`) mediante **File → Open Folder**.
+1. Abre esta carpeta (`Tesis_Grado_Economía`) mediante **File → Open Folder**.
 2. Abre **Terminal → New Terminal**.
 3. Ejecuta `Rscript run.R`. El proceso termina comprobando las cifras del PDF.
 4. Para Stata en este Mac: `/Applications/Stata/StataSE.app/Contents/MacOS/stata-se -q -b do scripts/stata/tesis.do`.
@@ -41,3 +41,12 @@ El script verifica cifras del PDF con una tolerancia de 0.000051 para valores pu
 Para volver a ejecutar sólo el diagnóstico: `Rscript scripts/R/diagnostico.R`.
 
 Después de ejecutar ambos lenguajes, `Rscript scripts/R/validar_lenguajes.R` comprueba la equivalencia de las tres muestras, la tabla 4, la densidad y el balance. Validación completada localmente: las diferencias numéricas entre R y Stata son menores de 0.000001 en esas comprobaciones.
+
+## Fuentes de los datos
+
+Este proyecto utiliza las bases de replicación de:
+
+- Martínez, Luis R. (2022). *How Much Should We Trust the Dictator’s GDP Growth Estimates?* Journal of Political Economy, 130(10), 2731–2769. [Artículo](https://doi.org/10.1086/720458).
+- Girardi, Daniele (2020). *Partisan Shocks and Financial Markets: Evidence from Close National Elections.* American Economic Journal: Applied Economics, 12(4), 224–252. [Artículo](https://doi.org/10.1257/app.20190292) · [Datos, versión V1](https://doi.org/10.3886/E115008V1).
+
+En [data/README.md](data/README.md) se incluyen las citas, los enlaces a los paquetes de replicación, los archivos exactos utilizados y las instrucciones para colocarlos en `data/raw/` y ejecutar el análisis. Las bases originales no se incluyen en este repositorio.
