@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Tesis: ejecutar R y verificar PDF",
+      "type": "process",
+      "command": "Rscript",
+      "args": ["run.R"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "Tesis: diagnostico de bases",
+      "type": "process",
+      "command": "Rscript",
+      "args": ["scripts/R/diagnostico.R"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "Tesis: ejecutar Stata (Mac)",
+      "type": "process",
+      "command": "/Applications/Stata/StataSE.app/Contents/MacOS/stata-se",
+      "args": ["-q", "-b", "do", "scripts/stata/tesis.do"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+output/
+*.log
+# Las bases se conservan localmente. Documentadas en data/README.md.
+data/raw/*.dta
+ado/
